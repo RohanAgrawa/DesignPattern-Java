@@ -1,0 +1,19 @@
+public class TableCreator implements Runnable{
+
+    private int x;
+
+
+    public TableCreator(int x)
+    {
+        this.x = x;
+    }
+
+    @Override
+    public void run() {
+
+        for(int i = 1; i <= 10; i++)
+        {
+            System.out.println(this.x + " times " + i + " is " + (i * this.x));
+        }
+    }
+}
